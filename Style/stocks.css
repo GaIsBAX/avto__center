@@ -77,10 +77,16 @@
   height: 50px;
   font-size: 16px;
   font-weight: 700;
-  border: none;
+  border: 1px var(--color-fo-grey) solid;
   border-radius: 50px;
   background-color: var(--color-red);
   color: var(--color-white);
+  transition: all 0.5s ease;
+}
+.stock__form-send-button:hover {
+  color: var(--color-black);
+  background-color: var(--color-white);
+  cursor: pointer;
 }
 
 .stock__form-checkboxs {

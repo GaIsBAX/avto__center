@@ -44,3 +44,34 @@ function openTab(tabName, btn) {
 
   btn.classList.add("selected");
 }
+
+let touchstartXx = 0;
+let touchendXx = 0;
+const slider2 = document.querySelector(".position");
+
+slider2.addEventListener(
+  "touchstart",
+  function (event) {
+    touchstartXx = event.changedTouches[0].screenX;
+  },
+  false
+);
+
+slider2.addEventListener(
+  "touchend",
+  function (event) {
+    touchendXx = event.changedTouches[0].screenX;
+    handleGesture1();
+  },
+  false
+);
+
+function handleGesture1() {
+  if (touchendXx < touchstartXx) {
+    slider2.scrollLeft += 210;
+  }
+
+  if (touchendXx > touchstartXx) {
+    slider2.scrollLeft -= 210;
+  }
+}

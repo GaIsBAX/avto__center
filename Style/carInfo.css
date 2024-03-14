@@ -137,23 +137,37 @@
 .car__info-equipment-information-block-bay-credit {
   width: 120px;
   height: 45px;
-  border: none;
+  border: 1px var(--color-red) solid;
   border-radius: 70px;
   background-color: var(--color-red);
   font-size: 16px;
   font-weight: 700;
   color: var(--color-white);
+  transition: all 0.5s ease;
+}
+
+.car__info-equipment-information-block-bay-credit:hover {
+  color: var(--color-black);
+  background-color: var(--color-white);
+  cursor: pointer;
 }
 
 .car__info-equipment-information-block-bay-trade {
   width: 190px;
   height: 45px;
-  border: none;
+  border: 1px var(--color-blue) solid;
   border-radius: 70px;
   background-color: var(--color-blue);
   font-size: 16px;
   font-weight: 700;
   color: var(--color-white);
+  transition: all 0.5s ease;
+}
+
+.car__info-equipment-information-block-bay-trade:hover {
+  color: var(--color-black);
+  background-color: var(--color-white);
+  cursor: pointer;
 }
 
 .hr {
@@ -376,5 +390,15 @@
 
     font-size: 12px;
     font-weight: 700;
+  }
+}
+
+@media (max-width: 450px) {
+  .car__info-characteristics-information-basic-decription-list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
   }
 }

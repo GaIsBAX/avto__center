@@ -31,10 +31,14 @@
   align-items: center;
   width: 275px;
   height: 416px;
-  border: none;
   border-radius: 10px;
   border: 1px var(--color-coWhite) solid;
   box-shadow: 0 0 10px 10px rgba(237, 237, 237, 1);
+  transition: border 0.5s;
+}
+
+.cars__item:hover {
+  border: 1px var(--color-fo-grey) solid;
 }
 
 .cars__link {
@@ -89,15 +93,16 @@
   width: 240px;
   height: 50px;
   border-radius: 50px;
-  background-color: var(--color-white);
   border: 1px var(--color-red) solid;
   font-size: 14px;
   font-weight: 700;
+  transition: all 0.5s ease;
   color: var(--color-black);
+  background-color: var(--color-white);
 }
 
 .car__offer:hover {
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
   color: var(--color-white);
   background-color: var(--color-red);
   cursor: pointer;

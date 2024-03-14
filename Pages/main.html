@@ -345,7 +345,8 @@
                 />
                 <p class="about__company-name">Jetta</p>
               </li>
-              <li class="about__company-item">
+
+              <li class="about__company-item item-width">
                 <img
                   class="about__company-image"
                   src="../Assets/images/autoIcon/Tank.png"
@@ -353,14 +354,23 @@
                 />
                 <p class="about__company-name">Tank</p>
               </li>
-              <li class="about__company-item">
+              <li class="about__company-item item-width">
                 <img
                   class="about__company-image"
                   src="../Assets/images/autoIcon/BAIC.png"
-                  alt=""
                 />
                 <p class="about__company-name">BAIC</p>
               </li>
+              <li class="about__company-item item-width"></li>
+              <div class="list__button">
+                <button
+                  id="text"
+                  class="about__company-mobile"
+                  onclick="changeText()"
+                >
+                  Показать еще
+                </button>
+              </div>
             </ul>
           </div>
         </div>
@@ -369,7 +379,6 @@
       <section class="offers">
         <div class="container">
           <h2 class="offers__title">Лучшие предложения</h2>
-          <div class="cars"></div>
           <ul class="cars__list">
             <li class="cars__item">
               <a class="cars__link" href="carCard.html">
@@ -774,5 +783,6 @@
     </div>
 
     <script src="../App.js"></script>
+    <script src="../About.js"></script>
   </body>
 </html>

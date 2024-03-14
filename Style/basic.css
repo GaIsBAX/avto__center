@@ -36,6 +36,13 @@ blockquote {
   margin: 0;
 }
 
+default {
+  list-style: none;
+}
+summary {
+  list-style: none;
+}
+
 .container {
   max-width: 1200px;
   padding: 0 20px;
@@ -45,15 +52,18 @@ blockquote {
 .button {
   font-size: 14px;
   font-weight: 700;
-  color: var(--color-white);
-  background-color: var(--color-red);
-  border: none;
+  border: 1px var(--color-red) solid;
   border-radius: 50px;
   width: 200px;
   height: 50px;
+  transition: all 0.5s ease;
+  color: var(--color-white);
+  background-color: var(--color-red);
 }
 
 .button:hover {
+  color: var(--color-black);
+  background-color: var(--color-white);
   cursor: pointer;
 }
 
